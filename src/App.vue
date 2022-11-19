@@ -1,17 +1,22 @@
 <!-- Ｈtml -->
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <TryIt 
+    msg="Here to Change Text" 
+    ChangeHtmlTag='<div>
+      <div class="1">You can Put any HtmlTag here</div>
+     </div>'
+    />
 </template>
 
 <!-- JS -->
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TryIt from './components/TryIt.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TryIt
   }
 }
 </script>
@@ -23,7 +28,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #000000;
   margin-top: 60px;
 }
 </style>
